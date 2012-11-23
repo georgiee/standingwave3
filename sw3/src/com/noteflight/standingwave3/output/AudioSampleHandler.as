@@ -153,7 +153,6 @@ package com.noteflight.standingwave3.output
             // Determine the frame at which we should start getting samples from the source.
             var frame:Number;
             frame = e.position - _startFrame;
-            
             if (_source != null)
             { 
                 // We have a live source to work with.
@@ -214,7 +213,7 @@ package com.noteflight.standingwave3.output
                     e.data.writeFloat(0);
                     e.data.writeFloat(0);
                 }
-                dispatchEvent(new Event(Event.SOUND_COMPLETE)); // Event.SOUND_COMPLETE
+                //dispatchEvent(new Event(Event.SOUND_COMPLETE)); // Event.SOUND_COMPLETE
             }
 
             // Calculate CPU utilization
